@@ -10,6 +10,7 @@ class user(models.Model):
         return self.username
     class Meta:
         db_table = 'user_1'
-        verbose_name='사용자'
+        verbose_name='사용자1'
         verbose_name_plural = '사용자'
 # Create your models here.
+####
