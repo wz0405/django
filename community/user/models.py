@@ -9,7 +9,7 @@ class user(models.Model):
     def __str__(self):
         return self.username
     class Meta:
-        db_table = 'user'
+        db_table = 'huser'
         verbose_name='사용자'
         verbose_name_plural = '사용자'
 # Create your models here.
