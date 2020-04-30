@@ -6,11 +6,7 @@ from .forms import LoginForm
 
 # Create your views here.
 def home(request):
-    user_id=request.session.get('user')
-    if user_id:
-        User=user.objects.get(pk=user_id)
-        return HttpResponse(User.username)
-    return HttpResponse('Home!')
+    return render(request, 'home.html')
 def logout(request):
     if request.session.get('user'):
         del(request.session['user'])
